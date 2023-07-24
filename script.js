@@ -33,7 +33,7 @@ form.addEventListener('submit', (event) => {
     }
     loading = true;
     form.elements[2].innerHTML = "Connecting...";
-    const socket = new WebSocket("ws://" + ip);
+    const socket = new WebSocket("wss://" + ip);
     socket.onclose = function (event) {
         if (event.wasClean) {
             console.log(`WebSocket connection closed cleanly, code=${event.code}, reason=${event.reason}`);
