@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: fixedsys;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.container {
+    height: calc(100vh - 40px);
+    width: calc(100vw - 40px);
+    margin: 20px 10px 10px 20px;
+    border: 1px solid #FFF;
+    position: relative;
+}
+
+.inputbox {
+    width: 100%;
+    height: 32px;
+    position: absolute; 
+    bottom: 0;
+    border-top: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.inputbox > p {
+    width: 32px;
+    text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input::placeholder {
+    font-family: fixedsys;
+    font-size: 16px;
+}
+
+input, select, textarea {
+    font-family: fixedsys;
+    font-size: 16px;
+    color: white;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+}
+
+.chat {
+    height: calc(100% - 40px);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.chat::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 6px;
+
+}
+
+.setup {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setup > form {
+    border: 1px solid;
+    width: 300px;
+}
+
+.setup > form > input {
+    border: 1px solid #FFF;
+    width: 240px;
+    margin-left: 25px;
+    margin-top: 16px;
+    padding: 4px 4px 4px 4px;
+}
+
+.setup > form > button {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 250px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: white;
+    font-family: fixedsys;
+    font-size: 18px;
+    padding: 4px 4px 4px 4px;
+    cursor: pointer;
+}
+
+.setup > form > button:hover {
+    background-color: #FFF;
+    color: black;
+}
